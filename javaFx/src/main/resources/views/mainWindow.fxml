@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="mainVBox" prefHeight="780.0" prefWidth="1200.0" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.MainController">
+    <MenuBar VBox.vgrow="NEVER">
+        <menus>
+            <Menu mnemonicParsing="false" text="File">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="New"/>
+                    <MenuItem mnemonicParsing="false" text="Open…"/>
+                    <Menu mnemonicParsing="false" text="Open Recent"/>
+                    <SeparatorMenuItem mnemonicParsing="false"/>
+                    <MenuItem mnemonicParsing="false" text="Close"/>
+                    <MenuItem mnemonicParsing="false" text="Save"/>
+                    <MenuItem mnemonicParsing="false" text="Save As…"/>
+                    <MenuItem mnemonicParsing="false" text="Revert"/>
+                    <SeparatorMenuItem mnemonicParsing="false"/>
+                    <MenuItem mnemonicParsing="false" text="Preferences…"/>
+                    <SeparatorMenuItem mnemonicParsing="false"/>
+                    <MenuItem mnemonicParsing="false" text="Quit"/>
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Undo"/>
+                    <MenuItem mnemonicParsing="false" text="Redo"/>
+                    <SeparatorMenuItem mnemonicParsing="false"/>
+                    <MenuItem mnemonicParsing="false" text="Cut"/>
+                    <MenuItem mnemonicParsing="false" text="Copy"/>
+                    <MenuItem mnemonicParsing="false" text="Paste"/>
+                    <MenuItem mnemonicParsing="false" text="Delete"/>
+                    <SeparatorMenuItem mnemonicParsing="false"/>
+                    <MenuItem mnemonicParsing="false" text="Select All"/>
+                    <MenuItem mnemonicParsing="false" text="Unselect All"/>
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="About">
+            </Menu>
+        </menus>
+    </MenuBar>
+    <!--<VBox id="Content" VBox.vgrow="ALWAYS">-->
+        <fx:include fx:id="toolBar" source="toolBar.fxml" VBox.vgrow="ALWAYS"/>
+        <fx:include fx:id="listView" source="listView.fxml" VBox.vgrow="ALWAYS"/>
+    <!--</VBox>-->
+    <fx:include fx:id="bottomStatusBar" source="bottomStatusBar.fxml"/>
+</VBox>
