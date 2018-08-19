@@ -43,9 +43,9 @@
             </Menu>
         </menus>
     </MenuBar>
-    <!--<VBox id="Content" VBox.vgrow="ALWAYS">-->
+    <VBox id="Content" VBox.vgrow="ALWAYS">
         <fx:include fx:id="toolBar" source="toolBar.fxml" VBox.vgrow="ALWAYS"/>
         <fx:include fx:id="listView" source="listView.fxml" VBox.vgrow="ALWAYS"/>
-    <!--</VBox>-->
+    </VBox>
     <fx:include fx:id="bottomStatusBar" source="bottomStatusBar.fxml"/>
 </VBox>
