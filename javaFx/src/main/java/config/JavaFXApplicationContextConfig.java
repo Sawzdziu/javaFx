@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 @Configuration
-@ComponentScan("controllers")
+@ComponentScan({"controllers", "button", "row"})
 @Import(ServiceContextConfig.class)
 public class JavaFXApplicationContextConfig {
 }

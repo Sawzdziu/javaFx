@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox id="HBox" alignment="CENTER_LEFT" spacing="5.0" VBox.vgrow="NEVER" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.BottomStatusBarController">
+    <children>
+        <Pane prefHeight="-1.0" prefWidth="-1.0" HBox.hgrow="ALWAYS" />
+        <Label text="Current branch: " />
+        <Label fx:id="branchNameLabel" font="$bottomStatusFont" maxWidth="300.0" minWidth="150.0" prefWidth="150.0" text="None" HBox.hgrow="NEVER">
+            <font>
+                <Font fx:id="bottomStatusFont" size="11.0" />
+            </font>
+        </Label>
+    </children>
+    <padding>
+        <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+    </padding>
+</HBox>

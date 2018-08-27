@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<ToolBar xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.ToolBarController">
+    <Button fx:id="addButton" text="Add user"/>
+    <Button fx:id="test2" text="Test2"/>
+    <Button fx:id="test3" text="Test3"/>
+    <TextField fx:id="search" promptText="Search..."/>
+</ToolBar>

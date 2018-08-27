@@ -1,0 +1,4 @@
+<?import javafx.scene.control.TableView?>
+<TableView xmlns:fx="http://javafx.com/fxml" fx:id="table"
+           fx:controller="controllers.ListViewController">
+</TableView>

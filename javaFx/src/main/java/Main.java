@@ -1,3 +1,4 @@
+import config.ImageEnum;
 import config.JavaFXApplicationContextConfig;
 import controllers.MainController;
 import javafx.application.Application;
@@ -13,8 +14,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main extends Application {
 
     private ApplicationContext context;
-
-    public static final String APP_ICON_PATH = "/images/account_balance.png";
 
     @FXML
     private MainController mainController;
@@ -39,13 +38,13 @@ public class Main extends Application {
         scene.getStylesheets().add(Main.class.getResource("/css/styles.css").toExternalForm());
 
 
-        primaryStage.getIcons().add(new Image(this.getClass().getResourceAsStream(APP_ICON_PATH)));
+        primaryStage.getIcons().add(new Image(ImageEnum.APP_ICON.getPath()));
         primaryStage.setScene(scene);
         primaryStage.setMinWidth(1500);
         primaryStage.setMinHeight(900);
         primaryStage.show();
 
-        root.requestFocus();
+//        root.requestFocus();
 
     }
 
